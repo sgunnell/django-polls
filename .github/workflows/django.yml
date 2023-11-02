@@ -33,6 +33,6 @@ jobs:
         DATABASE_PASSWORD: passworddb
         DATABASE_HOST: localhost
         DEBUG_MODE: False
-        DATABSE_POST: 1234
+        DATABASE_POST: 1234
       run: |
         python manage.py test
