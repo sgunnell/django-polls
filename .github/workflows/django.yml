@@ -28,10 +28,10 @@ jobs:
     - name: Run Tests
       env:
         SECRET_KEY: secret
-        DB_NAME: postgresdb
-        DB_USER: userdb
-        DB_PASSWORD: passworddb
-        DB_HOST: localhost
+        DATABASE_NAME: postgresdb
+        DATABASE_USER: userdb
+        DATABASE_PASSWORD: passworddb
+        DATABASE_HOST: localhost
         DEBUG_MODE: False
       run: |
         python manage.py test
