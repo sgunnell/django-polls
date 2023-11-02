@@ -33,6 +33,6 @@ jobs:
         DATABASE_PASSWORD: passworddb
         DATABASE_HOST: localhost
         DEBUG_MODE: False
-        DATABASE_PORT: 1234
+        DATABASE_PORT: 5432
       run: |
         python manage.py test
