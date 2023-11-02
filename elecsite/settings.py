@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-k@z9hkd6m0+_8c3ytk*3lx)=htwc@w!zswsu@4buq!3v3^k_^g'
+#SECRET_KEY = 'django-insecure-k@z9hkd6m0+_8c3ytk*3lx)=htwc@w!zswsu@4buq!3v3^k_^g'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'elecsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
