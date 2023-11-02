@@ -31,7 +31,7 @@ jobs:
         DATABASE_NAME: postgresdb
         DATABASE_USER: userdb
         DATABASE_PASSWORD: passworddb
-        DATABASE_HOST: localhost
+        DATABASE_HOST: postgres
         DEBUG_MODE: False
         DATABASE_PORT: 5432
       run: |
