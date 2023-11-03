@@ -40,6 +40,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       env:
+        SECRET_KEY: secret
         POSTGRES_NAME: github_actions
         POSTGRES_USER: postgres
         POSTGRES_PASSWORD: postgres
