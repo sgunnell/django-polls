@@ -6,6 +6,13 @@ on:
   pull_request:
     branches: [ "main" ]
 
+env:
+  POSTGRES_NAME: github_actions
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+  POSTGRES_HOST: 127.0.0.1
+  POSTGRES_PORT: 5432
+
 jobs:
   build:
 
@@ -14,13 +21,6 @@ jobs:
     services:
       postgres:
         image: postgres:latest
-        env:
-          POSTGRES_NAME: github_actions
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-          POSTGRES_HOST: 127.0.0.1
-          POSTGREST_PORT: 5432
-
         ports:
           - 5432:5432
         # needed because the postgres container does not provide a healthcheck
