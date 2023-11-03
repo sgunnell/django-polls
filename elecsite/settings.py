@@ -85,12 +85,12 @@ DATABASES = {
         'NAME': os.environ.get('POSTGRES_NAME'),
         'USER': os.environ.get('POSTGRES_USER'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD'),
-        'HOST': 'db',
-        'PORT': 5432
+        'HOST': os.environ.get('POSTGRES_HOST'),
+        'PORT': os.environ.get('POSTGRES_PORT'),
 
     }
 }
-if os.environ.get('GITHUB_WORKFLOW'):
+"""if os.environ.get('GITHUB_WORKFLOW'):
     DATABASES = {
         'default': {
            'ENGINE': 'django.db.backends.postgresql',
@@ -100,7 +100,7 @@ if os.environ.get('GITHUB_WORKFLOW'):
            'HOST': '127.0.0.1',
            'PORT': '5432',
         }
-    }
+    }"""
 
 
 # Password validation
