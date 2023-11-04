@@ -46,6 +46,6 @@ jobs:
         POSTGRES_PASSWORD: postgres
         POSTGRES_HOST: 127.0.0.1
         POSTGREST_PORT: 5432
-        DJANGO_SETTINGS_MODULE: mysite.settings
+        DJANGO_SETTINGS_MODULE: elecsite.settings
       run: |
         pytest
