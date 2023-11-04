@@ -47,4 +47,4 @@ jobs:
         POSTGRES_HOST: 127.0.0.1
         POSTGREST_PORT: 5432
       run: |
-        python manage.py test
+        pytest
